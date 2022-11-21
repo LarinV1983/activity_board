@@ -7,5 +7,114 @@ body {
 	margin: 0;
 	background-color: blue;
 	font-family: 'Rubik', sans-serif;
-	font-size: 18px;
+	color: #fff;
 }
+
+.board {
+	min-height: 100vh;
+	padding: 4rem 0.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+	.board__content {
+		width: 100%;
+		max-width: 900px;
+		margin: 0 auto;
+		display: grid;
+		gap: 1.5rem;
+		justify-content: center;
+		grid-template-columns: repeat(1, min(300px, 330px));
+	}
+	.board__person {
+		width: 100%;
+		background-color: #092153;
+		border-radius: 10px;
+	}
+	.board__item {
+		width: 100%;
+    padding-top: 2.15rem;
+    background-color: white;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: 92% -8%;
+	}
+
+.card {
+	 background-color:#0E378B;
+    border-radius:10px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+	.card__photo {
+		width: 50px;
+		height: 50px;
+		border: 3px solid white;
+		border-radius: 50px;
+	}
+	.card__text {}
+	.card__subtitle {
+		font-weight: bold;
+    margin: 0;
+    font-size: 12px;
+  }
+	.card__title {
+		font-weight: bold;
+    margin: 0.5rem 0 0;
+	}
+
+.view-selector {
+	padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  }
+	.view-selector__item {
+		font-size: 12px;
+    color: #5178C9;
+    cursor: pointer;
+	}
+	.view-selector__item:hover, .view-selector__item--active {
+		color: #fff;
+	}
+
+.tracking-card {
+	 	background-color: #092153;
+    border-radius: 10px;
+    padding: 1.25rem;
+    position: relative;
+    bottom: -2px;
+}
+	.tracking-card__header, .tracking-card__body {
+		display: flex;
+    align-items: center;
+    justify-content: space-between;
+	}
+	.tracking-card__header {
+    margin-bottom: 1rem;
+}
+	.tracking-card__title {
+		margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+	}
+	.tracking-card__menu {
+		cursor: pointer;
+	}
+	.tracking-card__time {
+		font-size: 32px;
+    font-weight: bold;
+	}
+	.tracking-card__period {
+		font-weight: bold;
+    font-size: 12px;
+    color: 
+	}
+.board__item:hover .tracking-card {
+	background-color: #4364AA;
+}
+
+
