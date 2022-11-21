@@ -2,3 +2,10 @@
 *{
 	box-sizing: border-box;
 }
+
+body {
+	margin: 0;
+	background-color: blue;
+	font-family: 'Rubik', sans-serif;
+	font-size: 18px;
+}
