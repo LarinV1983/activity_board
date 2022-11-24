@@ -1,0 +1,5 @@
+async function getBoardData(url ='data.json') {
+	const response = await fetch(url);
+	const data await response.json.();
+	return data;
+}
