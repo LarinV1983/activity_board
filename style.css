@@ -140,4 +140,48 @@ body {
     background-color: #D28738;
     background-image: url(images/icon-self-care.svg);
 }
+@media (min-width: 1024px) {
+    .board__content {
+        grid-template-columns: repeat(4, 1fr);
+    }
 
+    .board__person {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-grow: 1;
+    }
+    .card__photo {
+        margin-bottom: 1.5rem;
+    }
+    .card__title {
+        font-size: 30px;
+    }
+
+    .view-selector {
+        flex-direction: column;
+    }
+    .view-selector__item:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+    .tracking-card__body {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tracking-card__time {
+        margin-bottom: 0.75rem;
+        font-size: 48px;
+    }
+    .tracking-card__header {
+        margin-bottom: 0.75rem;
+    }
+}
