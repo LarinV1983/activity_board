@@ -116,5 +116,28 @@ body {
 .board__item:hover .tracking-card {
 	background-color: #4364AA;
 }
-
+.board__item--work {
+    background-color: #F48713;
+    background-image: url(images/icon-work.svg);
+}
+.board__item--play {
+    background-color: #2747E8;
+    background-image: url(images/icon-play.svg);
+}
+.board__item--study {
+    background-color: #F15F71;
+    background-image: url(images/icon-study.svg);
+}
+.board__item--exercise {
+    background-color: #07ED32;
+    background-image: url(images/icon-exercise.svg);
+}
+.board__item--social {
+    background-color: #A407ED;
+    background-image: url(images/icon-social.svg);
+}
+.board__item--self-care {
+    background-color: #D28738;
+    background-image: url(images/icon-self-care.svg);
+}
 
