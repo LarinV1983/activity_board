@@ -12,7 +12,7 @@ class BoardItem {
     }
 	constructor (data, container = '.board__content', view = 'weekly') {
 		this.data = data;
-		this.container = document.querySelector('container');
+		this.container = document.querySelector(container);
 		this.view = view;
 
 		this._createMarkup();
@@ -46,6 +46,7 @@ class BoardItem {
         this.prev = this.container.querySelector(`.board__item--${id} .tracking-card__period`);
 	}
 
+
 	 changeView(view) {
         this.view = view.toLowerCase();
         const {current, previous} = this.data.timeframes[this.view.toLowerCase()];
@@ -55,12 +56,12 @@ class BoardItem {
     }
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
 	getBoardData()
-	.then(data =>{
+	.then(data => {
 		 const activities = data.map(activity => new BoardItem(activity));
-		 selectors.forEach(selector => 
-        selector.addEventListener('click', function() {
+		 const selectors = document.querySelectorAll('.view-selector__item');
+		 selectors.forEach(selector => selector.addEventListener('click', function() {
         selectors.forEach(sel => sel.classList.remove('view-selector__item--active'))
         selector.classList.add('view-selector__item--active');
         const currentView = selector.innerText.trim().toLowerCase();
